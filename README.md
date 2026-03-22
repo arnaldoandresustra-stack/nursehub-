@@ -7,9 +7,9 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --teal: #0a9396;--teal-light: #94d2bd;--teal-dark: #005f73;
+    --teal: #c1121f;--teal-light: #ff8fa3;--teal-dark: #7d0000;
     --cream: #f8f4ef;--coral: #ee9b00;
-    --cardio: #c1121f;--cardio-light: #ffdad5;
+    --cardio: #9d0208;--cardio-light: #ffe0e0;
     --hemo: #3a0ca3;--hemo-light: #e0d7ff;
     --dark: #1a1a2e;--mid: #3d3d5c;--soft: #7a7a99;
     --white: #ffffff;--border: #e8e3db;
@@ -188,9 +188,9 @@
 </nav>
 
 <div class="hero">
-  <h1><em class="es-txt">Conocimiento clínico,</em><em class="en-txt" style="display:none">Clinical knowledge,</em><br><span class="es-txt">en comunidad</span><span class="en-txt" style="display:none">in community</span></h1>
-  <p class="es-txt">Enfermería, perfusión, anestesia y especialidades críticas. Profesionales reales compartiendo conocimiento real.</p>
-  <p class="en-txt" style="display:none">Nursing, perfusion, anesthesia and critical specialties. Real professionals sharing real knowledge.</p>
+  <h1><em class="es-txt">Hagamos grande</em><em class="en-txt" style="display:none">Let's build</em><br><span class="es-txt">esta comunidad</span><span class="en-txt" style="display:none">this community</span></h1>
+  <p class="es-txt">Juntos somos más fuertes. Compartí tu experiencia, aprendé de colegas y construyamos la comunidad clínica que siempre quisimos tener.</p>
+  <p class="en-txt" style="display:none">Together we are stronger. Share your experience, learn from colleagues and build the clinical community we always wanted.</p>
   <div class="hero-stats">
     <div class="stat"><div class="stat-num">2.4k</div><div class="stat-label es-txt">Miembros</div><div class="stat-label en-txt" style="display:none">Members</div></div>
     <div class="stat"><div class="stat-num">847</div><div class="stat-label es-txt">Publicaciones</div><div class="stat-label en-txt" style="display:none">Posts</div></div>
@@ -378,6 +378,62 @@
     <div id="tab-resources" class="content-section">
       <div class="post-card">
         <div class="post-inner">
+          <div class="vote-col"><button class="vote-btn" onclick="vote(this,1)">▲</button><div class="vote-count">87</div><button class="vote-btn" onclick="vote(this,-1)">▼</button></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="section-tag tag-cardio es-txt">CEC & Perfusión</span><span class="expert-ribbon expert-cardio">✦ Por Andrés</span><span class="post-time">• hace 1d</span></div>
+            <div class="featured-badge">⭐ <span class="es-txt">Guía verificada</span></div>
+            <div class="post-title">Guía completa de Circulación Extracorpórea (CEC) — Fundamentos, circuito y manejo intraoperatorio</div>
+            <div class="post-excerpt">Desde el cebado del circuito hasta el destete: tipos de oxigenadores, bombas, líneas arteriales y venosas, monitoreo de flujo, presiones y gestión de gases durante la CEC.</div>
+            <div class="post-tags"><span class="tag-pill">#CEC</span><span class="tag-pill">#perfusión</span><span class="tag-pill">#bypass</span><span class="tag-pill">#corazónabierto</span></div>
+            <div class="post-actions"><button class="action-btn" onclick="showToast('📥 Guía disponible próximamente')">📥 <span class="es-txt">Descargar PDF</span></button><button class="action-btn" onclick="showToast('🔗 Copiado!')">🔗</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <div class="post-inner">
+          <div class="vote-col"><button class="vote-btn" onclick="vote(this,1)">▲</button><div class="vote-count">72</div><button class="vote-btn" onclick="vote(this,-1)">▼</button></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="section-tag tag-cardio es-txt">Anestesia</span><span class="expert-ribbon expert-anest">💉 Por Andrés</span><span class="post-time">• hace 2d</span></div>
+            <div class="featured-badge">⭐ <span class="es-txt">Guía verificada</span></div>
+            <div class="post-title">Manual de anestesia cardiovascular — Inducción, mantenimiento y emergencia en cirugía a corazón abierto</div>
+            <div class="post-excerpt">Agentes inductores en pacientes con FE reducida, mantenimiento con sevoflurano vs TIVA, manejo del despertar post-CEC y criterios de extubación precoz.</div>
+            <div class="post-tags"><span class="tag-pill">#anestesia</span><span class="tag-pill">#cardiovascular</span><span class="tag-pill">#TIVA</span><span class="tag-pill">#extubación</span></div>
+            <div class="post-actions"><button class="action-btn" onclick="showToast('📥 Manual disponible próximamente')">📥 <span class="es-txt">Descargar PDF</span></button><button class="action-btn" onclick="showToast('🔗 Copiado!')">🔗</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <div class="post-inner">
+          <div class="vote-col"><button class="vote-btn" onclick="vote(this,1)">▲</button><div class="vote-count">65</div><button class="vote-btn" onclick="vote(this,-1)">▼</button></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="section-tag tag-hemo es-txt">Hemodinámica</span><span class="expert-ribbon expert-cardio">✦ Por Andrés</span><span class="post-time">• hace 3d</span></div>
+            <div class="featured-badge">⭐ <span class="es-txt">Guía verificada</span></div>
+            <div class="post-title">Protocolo de monitoreo hemodinámico con Swan-Ganz — Interpretación clínica paso a paso</div>
+            <div class="post-excerpt">Inserción, posicionamiento y lectura del catéter de Swan-Ganz. Interpretación de PCP, GC, RVS y PVC en distintos escenarios: shock cardiogénico, séptico e hipovolémico.</div>
+            <div class="post-tags"><span class="tag-pill">#Swan-Ganz</span><span class="tag-pill">#hemodinámica</span><span class="tag-pill">#shockCardiogénico</span><span class="tag-pill">#GC</span></div>
+            <div class="post-actions"><button class="action-btn" onclick="showToast('📥 Protocolo disponible próximamente')">📥 <span class="es-txt">Descargar PDF</span></button><button class="action-btn" onclick="showToast('🔗 Copiado!')">🔗</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <div class="post-inner">
+          <div class="vote-col"><button class="vote-btn" onclick="vote(this,1)">▲</button><div class="vote-count">58</div><button class="vote-btn" onclick="vote(this,-1)">▼</button></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="section-tag tag-qa es-txt">UCI / Críticos</span><span class="expert-ribbon expert-anest">💉 Por Andrés</span><span class="post-time">• hace 4d</span></div>
+            <div class="featured-badge">⭐ <span class="es-txt">Guía verificada</span></div>
+            <div class="post-title">Cálculo de drogas vasoactivas en UCI — Noradrenalina, dopamina, dobutamina y vasopresina</div>
+            <div class="post-excerpt">Fórmulas de cálculo, preparación de infusiones, rangos de dosis terapéuticas y algoritmo de escalada vasopresora. Incluye tabla de conversión mcg/kg/min.</div>
+            <div class="post-tags"><span class="tag-pill">#vasoactivas</span><span class="tag-pill">#noradrenalina</span><span class="tag-pill">#UCI</span><span class="tag-pill">#cálculo</span></div>
+            <div class="post-actions"><button class="action-btn" onclick="showToast('📥 Tabla disponible próximamente')">📥 <span class="es-txt">Descargar PDF</span></button><button class="action-btn" onclick="showToast('🔗 Copiado!')">🔗</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <div class="post-inner">
           <div class="vote-col"><button class="vote-btn" onclick="vote(this,1)">▲</button><div class="vote-count">93</div><button class="vote-btn" onclick="vote(this,-1)">▼</button></div>
           <div class="post-body">
             <div class="post-meta"><span class="section-tag tag-resource es-txt">Recurso</span><span class="section-tag tag-resource en-txt" style="display:none">Resource</span><span class="post-author"><strong>Admin NurseHub</strong></span></div>
@@ -409,6 +465,19 @@
   </main>
 
   <aside class="sidebar">
+    
+    <div class="sidebar-card" style="border-top: 3px solid var(--teal);">
+      <div style="display:flex;align-items:center;gap:.8rem;margin-bottom:.8rem;">
+        <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#c1121f,#7d0000);display:flex;align-items:center;justify-content:center;font-family:'DM Serif Display',serif;font-size:1.2rem;color:white;font-weight:700;flex-shrink:0;">A</div>
+        <div>
+          <div style="font-weight:700;font-size:.95rem;color:var(--dark);">Andrés Benítez</div>
+          <div style="font-size:.75rem;color:var(--soft);">Fundador · Perfusionista · Téc. Anestesia · Enfermero</div>
+        </div>
+      </div>
+      <div style="font-size:.82rem;color:var(--soft);line-height:1.6;" class="es-txt">"Creé NurseHub porque no encontraba un espacio en español donde los que trabajamos en especialidades críticas pudiéramos compartir conocimiento real."</div>
+      <div style="font-size:.82rem;color:var(--soft);line-height:1.6;" class="en-txt" style="display:none">"I created NurseHub because I couldn't find a Spanish-language space where those of us in critical specialties could share real knowledge."</div>
+    </div>
+
     <div class="perf-callout">
       <h3>🫀 <span class="es-txt">Espacio del Perfusionista</span><span class="en-txt" style="display:none">Perfusionist Space</span></h3>
       <p class="es-txt">Comunidad exclusiva para técnicos en CEC, perfusionistas y especialistas cardiovasculares. El único espacio en español dedicado a esta especialidad.</p>
