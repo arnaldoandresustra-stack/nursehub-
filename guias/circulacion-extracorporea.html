@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===== SEO (editar para CADA guía) ===== -->
+<title>Circulación extracorpórea (CEC): fundamentos y manejo intraoperatorio | NurseHub</title>
+<meta name="description" content="Guía de circulación extracorpórea (CEC): componentes del circuito, cebado, manejo de flujo y presiones, gases y destete. Para enfermería y perfusión. Basada en evidencia.">
+<meta name="author" content="Andrés Benítez">
+<link rel="canonical" href="https://TU-DOMINIO.com/guias/circulacion-extracorporea.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Circulación extracorpórea (CEC): fundamentos y manejo intraoperatorio">
+<meta property="og:description" content="Componentes del circuito, cebado, flujo, presiones, gases y destete en CEC.">
+<meta property="og:locale" content="es_ES">
+
+<!-- Datos estructurados de artículo médico (mejora el SEO de salud / E-E-A-T) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalWebPage",
+  "headline":"Circulación extracorpórea (CEC): fundamentos y manejo intraoperatorio",
+  "inLanguage":"es",
+  "datePublished":"2026-01-01",
+  "dateModified":"2026-01-01",
+  "author":{"@type":"Person","name":"Andrés Benítez","jobTitle":"Perfusionista, Técnico en Anestesia, Enfermero"},
+  "publisher":{"@type":"Organization","name":"NurseHub"},
+  "about":"Circulación extracorpórea"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{--ink:#141A22;--ink-soft:#3A4654;--muted:#5C6776;--paper:#F5F7F9;--surface:#FFFFFF;--line:#E2E7EC;
+  --arterial:#C8102E;--venous:#0E4F6E;--venous-tint:#E7F0F4;--radius:14px;--maxw:760px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;line-height:1.2;letter-spacing:-.01em}
+a{color:var(--venous)}
+.mono{font-family:'IBM Plex Mono',monospace}
+
+.nav{position:sticky;top:0;z-index:50;background:rgba(20,26,34,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding:.85rem 1.25rem;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:.55rem;color:#fff;font-family:'DM Serif Display',serif;font-size:1.25rem;text-decoration:none}
+.brand .mark{width:28px;height:28px;border-radius:7px;background:var(--arterial);display:grid;place-items:center;font-size:.9rem}
+.nav-back{color:rgba(255,255,255,.72);text-decoration:none;font-size:.85rem;font-weight:500}
+.nav-back:hover{color:#fff}
+
+.article{max-width:var(--maxw);margin:0 auto;padding:2.5rem 1.25rem 1rem}
+.crumb{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;margin-bottom:1rem}
+.crumb a{color:var(--muted);text-decoration:none}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--arterial)}
+h1{font-size:clamp(1.9rem,5vw,2.8rem);margin:.5rem 0 .9rem}
+.meta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;font-size:.82rem;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:1.2rem;margin-bottom:1.6rem}
+.meta .who{display:flex;align-items:center;gap:.5rem;color:var(--ink-soft);font-weight:600}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--line)}
+
+/* Aviso médico destacado */
+.callout{background:#fff;border:1px solid var(--line);border-left:3px solid var(--arterial);border-radius:10px;padding:1rem 1.2rem;margin:1.6rem 0;font-size:.9rem;color:var(--ink-soft)}
+.callout b{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--arterial);display:block;margin-bottom:.35rem}
+
+/* Tabla de contenidos */
+.toc{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.1rem 1.3rem;margin:1.6rem 0}
+.toc b{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-family:'IBM Plex Mono',monospace}
+.toc ol{margin:.6rem 0 0 1.1rem;font-size:.92rem}
+.toc li{margin:.25rem 0}
+.toc a{color:var(--ink-soft);text-decoration:none}
+.toc a:hover{color:var(--venous)}
+
+.body h2{font-size:1.5rem;margin:2.2rem 0 .7rem;scroll-margin-top:80px}
+.body h3{font-size:1.15rem;margin:1.4rem 0 .5rem}
+.body p,.body li{font-size:1.02rem;color:var(--ink)}
+.body p{margin:.7rem 0}
+.body ul,.body ol{margin:.6rem 0 .6rem 1.3rem}
+.body li{margin:.35rem 0}
+.todo{background:#FFF8E6;border:1px dashed #E0B23A;border-radius:8px;padding:.7rem .9rem;font-size:.88rem;color:#7a5a00;margin:.8rem 0}
+.todo b{font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
+
+/* Bloque de datos clínicos (estilo monitor) */
+.data{background:var(--ink);color:#fff;border-radius:10px;padding:1.1rem 1.3rem;margin:1.2rem 0;font-family:'IBM Plex Mono',monospace;font-size:.9rem;overflow-x:auto}
+.data .row{display:flex;justify-content:space-between;gap:1rem;padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.data .row:last-child{border-bottom:0}
+.data .label{color:rgba(255,255,255,.6)}
+
+/* CTA email dentro del artículo */
+.inline-cta{background:var(--venous-tint);border:1px solid #cfe0e8;border-radius:12px;padding:1.3rem;margin:2rem 0;text-align:center}
+.inline-cta h3{font-size:1.2rem;color:var(--venous);margin-bottom:.4rem}
+.inline-cta p{font-size:.9rem;color:var(--ink-soft);margin-bottom:.9rem}
+.inline-cta form{display:flex;gap:.5rem;max-width:380px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.inline-cta input{flex:1;min-width:180px;padding:.7rem .9rem;border-radius:9px;border:1px solid #bcd0da;font-size:.9rem;font-family:inherit}
+.inline-cta button{background:var(--venous);color:#fff;border:none;padding:.7rem 1.2rem;border-radius:9px;font-weight:600;cursor:pointer;font-family:inherit}
+
+/* Espacio reservado para publicidad (activar SOLO con tráfico real y AdSense aprobado) */
+.ad-slot{border:1px dashed var(--line);border-radius:10px;padding:1rem;text-align:center;color:#a9b2bc;font-size:.78rem;font-family:'IBM Plex Mono',monospace;margin:2rem 0}
+
+/* Referencias */
+.refs{border-top:1px solid var(--line);margin-top:2.5rem;padding-top:1.4rem}
+.refs h2{font-size:1.3rem;margin-bottom:.6rem}
+.refs ol{margin-left:1.2rem;font-size:.9rem;color:var(--muted)}
+.refs li{margin:.4rem 0}
+
+/* Autor al pie */
+.authorbox{display:flex;gap:1rem;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.3rem;margin-top:2rem}
+.authorbox .pic{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--arterial),#7d0000);color:#fff;display:grid;place-items:center;font-family:'DM Serif Display',serif;font-size:1.3rem;flex-shrink:0}
+.authorbox b{font-size:1rem}
+.authorbox .role{font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:var(--muted);margin:.15rem 0 .5rem}
+.authorbox p{font-size:.88rem;color:var(--ink-soft)}
+
+/* Guías relacionadas (enlazado interno = bueno para SEO) */
+.related{max-width:var(--maxw);margin:0 auto;padding:1rem 1.25rem 2rem}
+.related h2{font-size:1.3rem;margin-bottom:.9rem}
+.rel-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.rel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem;text-decoration:none;color:inherit}
+.rel:hover{border-color:#cdd5dd}
+.rel .t{font-family:'IBM Plex Mono',monospace;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--arterial)}
+.rel .h{font-family:'DM Serif Display',serif;font-size:1rem;margin-top:.25rem;line-height:1.25}
+@media(max-width:560px){.rel-grid{grid-template-columns:1fr}}
+
+footer{background:#0E141B;color:rgba(255,255,255,.65);padding:2rem 1.25rem;font-size:.82rem}
+.foot-in{max-width:var(--maxw);margin:0 auto}
+.disclaimer{border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:.9rem 1.1rem;background:rgba(200,16,46,.08);margin-bottom:1rem}
+.disclaimer b{color:#ff8a9b;display:block;margin-bottom:.3rem;font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+.foot-meta{color:rgba(255,255,255,.45);border-top:1px solid rgba(255,255,255,.1);padding-top:1rem}
+.foot-meta a{color:rgba(255,255,255,.6)}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="../index.html"><span class="mark">🩺</span>NurseHub</a>
+    <a class="nav-back" href="../index.html">← Todas las guías</a>
+  </div>
+</header>
+
+<article class="article">
+  <div class="crumb"><a href="../index.html">Inicio</a> / <a href="../index.html#guias">Guías</a> / Perfusión</div>
+  <span class="kicker">Perfusión · CEC</span>
+  <h1>Circulación extracorpórea (CEC): fundamentos y manejo intraoperatorio</h1>
+  <div class="meta">
+    <span class="who"><span class="mono">A</span> Andrés Benítez</span>
+    <span class="dot"></span><span>Revisada · Ene 2026</span>
+    <span class="dot"></span><span>≈ 18 min de lectura</span>
+  </div>
+
+  <div class="callout">
+    <b>Antes de empezar</b>
+    Esta guía es de carácter educativo. Los valores, parámetros y procedimientos descritos deben ajustarse a los protocolos de tu institución y a las indicaciones del equipo quirúrgico. Verificá siempre con las fuentes citadas al pie.
+  </div>
+
+  <nav class="toc">
+    <b>En esta guía</b>
+    <ol>
+      <li><a href="#que-es">Qué es la CEC y para qué sirve</a></li>
+      <li><a href="#componentes">Componentes del circuito</a></li>
+      <li><a href="#cebado">Cebado del circuito (priming)</a></li>
+      <li><a href="#manejo">Manejo intraoperatorio: flujo, presiones y gases</a></li>
+      <li><a href="#destete">Destete de la CEC</a></li>
+      <li><a href="#enfermeria">Rol de enfermería y perfusión</a></li>
+    </ol>
+  </nav>
+
+  <div class="body">
+    <h2 id="que-es">1. Qué es la CEC y para qué sirve</h2>
+    <p>La circulación extracorpórea (CEC) es la técnica que asume de forma temporal la función del corazón y los pulmones durante la cirugía cardíaca, permitiendo operar con el corazón detenido y el campo quirúrgico sin sangre. La sangre se desvía fuera del cuerpo, se oxigena y se devuelve a la circulación arterial del paciente.</p>
+    <p>El sistema está a cargo del perfusionista, en coordinación con cirugía, anestesia y enfermería instrumentista y circulante.</p>
+
+    <div class="todo"><b>Para Andrés:</b> ampliá esta introducción con tu propia experiencia y agregá las indicaciones quirúrgicas más frecuentes en tu centro. Citá la fuente de la definición (ver Referencias).</div>
+
+    <h2 id="componentes">2. Componentes del circuito</h2>
+    <p>Aunque hay variaciones entre fabricantes y centros, un circuito de CEC suele incluir estos elementos básicos:</p>
+    <ul>
+      <li><strong>Reservorio venoso:</strong> recibe la sangre que drena del paciente.</li>
+      <li><strong>Bomba:</strong> impulsa la sangre por el circuito (de rodillo o centrífuga).</li>
+      <li><strong>Oxigenador:</strong> realiza el intercambio gaseoso (incorpora O₂ y elimina CO₂).</li>
+      <li><strong>Intercambiador de calor:</strong> regula la temperatura de la sangre.</li>
+      <li><strong>Filtro arterial:</strong> retiene microburbujas y partículas antes del retorno al paciente.</li>
+      <li><strong>Líneas arterial y venosa:</strong> conducen la sangre desde y hacia el paciente.</li>
+    </ul>
+
+    <div class="todo"><b>Para Andrés:</b> insertá aquí un diagrama del circuito (imagen propia o con licencia). Un esquema visual mejora mucho el tiempo en página y el SEO.</div>
+
+    <h2 id="cebado">3. Cebado del circuito (priming)</h2>
+    <p>El cebado es el llenado del circuito con una solución antes de conectar al paciente, para eliminar el aire y dejar el sistema listo. La composición y el volumen del cebado dependen del protocolo institucional, del tamaño del paciente y del tipo de circuito.</p>
+
+    <div class="todo"><b>Para Andrés:</b> describí el protocolo de cebado de tu centro. No publiques cifras como universales: presentalas como “según protocolo” y respaldalas con una referencia.</div>
+
+    <h2 id="manejo">4. Manejo intraoperatorio: flujo, presiones y gases</h2>
+    <p>Durante la CEC se vigilan de forma continua varios parámetros para mantener una perfusión y oxigenación adecuadas de los órganos. Los rangos objetivo se definen por protocolo y por las características de cada paciente.</p>
+
+    <div class="data" aria-label="Ejemplo de parámetros monitorizados">
+      <div class="row"><span class="label">Flujo de bomba</span><span>según protocolo / superficie corporal</span></div>
+      <div class="row"><span class="label">Presión arterial media</span><span>objetivo definido por el equipo</span></div>
+      <div class="row"><span class="label">Temperatura</span><span>según estrategia (normo/hipotermia)</span></div>
+      <div class="row"><span class="label">Gases (O₂ / CO₂)</span><span>ajuste continuo del oxigenador</span></div>
+    </div>
+    <div class="todo"><b>Para Andrés:</b> este bloque es solo el formato. Completá cada fila con los rangos de tu protocolo y citá la guía o referencia correspondiente. Mantené el criterio de no dar cifras sin fuente.</div>
+
+    <h2 id="destete">5. Destete de la CEC</h2>
+    <p>El destete es la transición progresiva desde el soporte de la máquina de vuelta a la función cardíaca y pulmonar propias del paciente. Requiere coordinación entre perfusión, anestesia y cirugía, verificando ritmo, contractilidad, ventilación, temperatura y estado metabólico antes de retirar el soporte.</p>
+
+    <div class="inline-cta">
+      <h3>¿Te sirve esta guía?</h3>
+      <p>Avisame cuando publique las siguientes (Swan-Ganz, drogas vasoactivas y más).</p>
+      <form action="https://formspree.io/f/xykadrwg" method="POST">
+        <input type="email" name="email" placeholder="tu@correo.com" required>
+        <button type="submit">Avisarme</button>
+      </form>
+    </div>
+
+    <h2 id="enfermeria">6. Rol de enfermería y perfusión</h2>
+    <p>El éxito de la CEC depende del trabajo coordinado del equipo. La enfermería instrumentista y circulante, junto con perfusión y anestesia, comparten la responsabilidad de la seguridad, el control de tiempos, la anticoagulación y la comunicación durante las fases críticas.</p>
+    <div class="todo"><b>Para Andrés:</b> esta sección es tu diferencial. Contá el rol real desde tu experiencia: es lo que ningún manual genérico ofrece y lo que más valorará tu audiencia.</div>
+  </div>
+
+  <!-- Espacio de publicidad: dejar comentado hasta tener tráfico y AdSense aprobado -->
+  <div class="ad-slot">[ Espacio reservado para publicidad — activar solo con AdSense aprobado y tráfico real ]</div>
+
+  <div class="refs">
+    <h2>Referencias</h2>
+    <div class="todo"><b>Para Andrés:</b> reemplazá con tus fuentes reales (manuales de perfusión, guías de sociedades científicas, artículos revisados). Incluí autor, título, año y enlace. Esto es lo que sostiene la confianza y el SEO de salud.</div>
+    <ol>
+      <li>Fuente 1 — (autor, título, año, enlace)</li>
+      <li>Fuente 2 — (autor, título, año, enlace)</li>
+      <li>Fuente 3 — (autor, título, año, enlace)</li>
+    </ol>
+  </div>
+
+  <div class="authorbox">
+    <div class="pic">A</div>
+    <div>
+      <b>Andrés Benítez</b>
+      <div class="role">Perfusionista · Téc. en Anestesia · Enfermero</div>
+      <p>Escribe sobre perfusión, cuidados críticos y el área cardiovascular a partir de la práctica clínica, contrastada con fuentes de referencia.</p>
+    </div>
+  </div>
+</article>
+
+<section class="related">
+  <h2>Seguí leyendo</h2>
+  <div class="rel-grid">
+    <a class="rel" href="../index.html#guias"><div class="t">Hemodinámica</div><div class="h">Swan-Ganz: interpretación paso a paso</div></a>
+    <a class="rel" href="../index.html#guias"><div class="t">UCI · Farmacología</div><div class="h">Cálculo de drogas vasoactivas</div></a>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-in">
+    <div class="disclaimer">
+      <b>Aviso médico</b>
+      Contenido educativo y de actualización profesional. <strong>No sustituye el juicio clínico, la formación reglada ni los protocolos de cada institución.</strong> Verificá dosis, cálculos y procedimientos con las fuentes oficiales antes de aplicarlos a un paciente.
+    </div>
+    <div class="foot-meta">© <span id="y"></span> NurseHub · <a href="../index.html">Inicio</a></div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
